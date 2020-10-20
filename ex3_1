@@ -1,0 +1,12 @@
+modules:
+  - name: web
+    type: html5
+    path: web
+    requires:
+      - name: openSAPHANA6_<group number>-uaa
+      - name: xsjs_api
+        group: destinations
+        properties:
+          name: xsjs_api
+          url: '~{url}'
+          forwardAuthToken: true 

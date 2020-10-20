@@ -1,0 +1,11 @@
+  - name: xsjs
+    type: nodejs
+    path: xsjs
+    provides:
+      - name: xsjs_api
+        properties:
+          url: '${default-url}'
+    requires:
+      - name: openSAPHANA-hdi-container
+      - name: openSAPHANA6_<group number>-uaa
+      - name: db
